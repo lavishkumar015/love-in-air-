@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#210817">
+  <title>A Rose For You | A Little Love Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="A Rose For You home"><span>✿</span> a rose for you</a>
+      <div class="top-note"><span class="pulse-dot"></span> made with a little extra love</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span></span> A LITTLE SOMETHING SPECIAL <span></span></div>
+      <h1>For someone<br><em>extraordinary.</em></h1>
+      <p class="intro">Some feelings are too beautiful for ordinary words.<br>So, here's a little corner of the universe, just for you.</p>
+
+      <div class="rose-stage" aria-label="Animated rose">
+        <div class="glow-ring"></div>
+        <div class="rose">
+          <div class="rose-head">
+            <i class="petal petal-back-left"></i><i class="petal petal-back-right"></i>
+            <i class="petal petal-mid-left"></i><i class="petal petal-mid-right"></i>
+            <i class="petal petal-front"></i><i class="petal petal-center"></i>
+          </div>
+          <div class="rose-stem"></div>
+          <div class="rose-leaf leaf-left"></div>
+          <div class="rose-leaf leaf-right"></div>
+          <div class="thorn thorn-one"></div><div class="thorn thorn-two"></div>
+        </div>
+        <div class="rose-shadow"></div>
+        <span class="orbit orbit-one">✦</span><span class="orbit orbit-two">✧</span>
+        <span class="orbit orbit-three">♡</span>
+      </div>
+
+      <div class="hero-caption">one rose, a thousand ways to say <span>you matter</span></div>
+      <a class="scroll-cue" href="#shayari"><span></span> SCROLL TO FEEL THE LOVE</a>
+    </section>
+
+    <section class="shayari-section section-card" id="shayari">
+      <div class="section-kicker">WORDS FROM THE HEART</div>
+      <h2>A thousand little <em>feelings.</em></h2>
+      <p class="section-desc">A new line, a new feeling — pick one that says what your heart can't.</p>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button class="lang-btn active" data-lang="hi">हिंदी</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="mix">Hinglish</button>
+      </div>
+      <div class="quote-frame">
+        <span class="quote-mark">“</span>
+        <p id="shayariText" aria-live="polite">तुम्हारी मुस्कान में एक अलग-सी बात है, जैसे हर उदास दिन के बाद खूबसूरत-सी सुबह हो।</p>
+        <span class="quote-mark closing">”</span>
+      </div>
+      <div class="shayari-meta"><span id="counter">01 / 1000</span><span class="tiny-heart">♥</span><span>picked just for you</span></div>
+      <div class="button-row">
+        <button class="btn btn-ghost" id="prevBtn">← Previous</button>
+        <button class="btn btn-primary" id="nextBtn">Next feeling <span>✦</span></button>
+        <button class="btn btn-ghost" id="randomBtn">Surprise me ↗</button>
+      </div>
+      <div class="small-note">You can explore 1,000 unique combinations in each language.</div>
+    </section>
+
+    <section class="note-section">
+      <div class="note-icon">♡</div>
+      <div>
+        <div class="section-kicker">A NOTE FOR YOU</div>
+        <h2>Not every beautiful thing<br>needs a reason.</h2>
+        <p>Sometimes, someone simply makes the world feel softer, brighter, and a little more magical. This rose is a small reminder of that.</p>
+      </div>
+    </section>
+
+    <section class="proposal-section" id="proposal">
+      <div class="proposal-stars">✧　✦　✧</div>
+      <div class="section-kicker">THE QUESTION I'VE BEEN SAVING</div>
+      <h2>Can I make you<br><em>smile a little more?</em></h2>
+      <p>There's one question I'd really love to ask you...</p>
+      <button class="btn btn-propose" id="openProposal">Open my heart <span>♥</span></button>
+    </section>
+
+    <section class="answer-card" id="answerCard" hidden>
+      <div class="answer-rose">🌹</div>
+      <div class="section-kicker">JUST ONE QUESTION</div>
+      <h2>Will you be my<br><em>special person?</em></h2>
+      <p class="answer-copy">No pressure, no perfect words. Just an honest feeling, shared with a rose.</p>
+      <div class="answer-buttons">
+        <button class="btn btn-yes" id="yesBtn">Yes, with a smile ♥</button>
+        <button class="btn btn-maybe" id="thinkBtn">Let me think</button>
+      </div>
+      <p class="response" id="response" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      <div class="footer-heart">♥</div>
+      <p>Made with love, one petal at a time.</p>
+      <span>© A Rose For You</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
